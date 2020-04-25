@@ -62,3 +62,8 @@ This one was pretty troublesome and since it can't run three screens nor Catalin
 
 I suspect the third DP output is not really cabled as DisplayPort in iGPU as it's a modular port, causing it to not work since MacOS doesn't like adapters. Trying different Framebuffer values without success.  
 The standard two first DP ports works fine, as long as you don't unplug, which often causes display to crash.
+
+# Tips and tricks
+### Entirely disabling GateKeeper
+
+```sudo spctl --master-disable```
