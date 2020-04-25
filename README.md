@@ -48,7 +48,7 @@ This one had some quirks. First of all, it doesn't boot Catalina at all. It goes
 It doesn't seem to be an EC issue as the usual EC patches works without issues since names are generic ones for EC.
 
 HP has very crappy firmwares, and this one is no exception.  
-The main issue with this device (other than EC issues) seems to be RTC. By default, RTC is entirely disabled, causing MacOS to halt boot in very early stage.  
+The main issue with this device (other than Catalina issues) seems to be RTC. By default, RTC is entirely disabled, causing MacOS to halt boot in very early stage.  
 SSDT-AWAC fixes that by setting ```STAS = one``` in ACPI table, which cause _STA of RTC to return 0x0f (expected value for _STA/Status).
 Enabling RTC allows MacOS Mojave to boot fine, but causes a second issue: BIOS will throw error 005 (real time clock error) at each reboot.  
 This is due to MacOS writing in CMOS (RTC) offsets where it shouldn't. This is fixed using RTCMemoryFixup and setting ```rtcfx_exclude=58-59,B0-B3,D0-DF``` in boot arguments. The error is now gone.
