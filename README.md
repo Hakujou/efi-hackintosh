@@ -15,7 +15,7 @@ I always use OpenCore (except if doesn't boot at all) since I find it cleaner th
 * Intel Core i5 6600K
 * 16GB RAM
 * AMD RX 580 (main GPU for MacOS, soft disabled in Windows)
-* NVidia GTX 1080 (main GPU for Windows, hidden in ACPI for MacOS)
+* NVidia GTX 1080 (main GPU for Windows, hidden in OC DeviceProperties for MacOS)
 * Crucial M2 SATA SSD (used for MacOS)
 * 2xIntel SATA SSD (used for Windows + shared data)
 * Sonnet Solo 10G-BaseT PCIe card
@@ -26,7 +26,7 @@ Works fine on High Sierra, Mojave, and Catalina with OpenCore 0.5.7 (current) an
 OpenCore 0.5.5 would not boot on that machine, otherwise nothing specific or particular difficulties.  
 Beware of GPU disabling patch (Root -> DeviceProperties -> Add) as your GPU PCI root is probably different than mine. You can remove it if you only has an AMD GPU.
 
-If you want sleep to work, you need to set ACPI controlled by OS in BIOS settings (default value, IIRC). Secure Boot can still be enabled, but I disabled it since I don't like it.
+If you want sleep to work, you need to set Sleep controlled by OS in BIOS settings (default value, IIRC). Secure Boot can still be enabled, but I disabled it since I don't like it.
 
 ### Broken things
 
