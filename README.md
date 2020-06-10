@@ -4,11 +4,22 @@ Each machine gets its own branch, sometimes with variations (version upgrades, M
 As of today, there are:
 
 * Main PC - branch desktop
+* Main PC (Legacy) - branch desktop-legacy
 * HP EliteDesk 800 G3 - branch hp800g3
 
 I always use OpenCore (except if doesn't boot at all) since I find it cleaner than Clover.
 
 ## Desktop
+### Configuration
+
+* Asus Prime Z390-A
+* Intel Core i5 9600KF
+* 16GB RAM
+* AMD RX 580
+* Crucial P2 NVMe SSD
+* Sonnet Solo 10G-BaseT PCIe card
+
+## Desktop (Legacy)
 ### Configuration
 
 * MSI Z170A Gaming Pro
