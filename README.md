@@ -23,10 +23,7 @@ I always use OpenCore (except if doesn't boot at all) since I find it cleaner th
 
 Works fine on Catalina with OpenCore 0.5.9.  
 RTC seems to cause motherboard in safe mode at next reboot, disabling motherboard errors will hide that issue (RTCMemoryFixup should work and be a cleaner way to handle that, but it would require to search correct offsets).  
-USBMap still needs to be done, currently using OpenCore USB Inject All.  
 iMacPro1,1 SMBios is used as we're using an iGPU-less CPU, hardware acceleration is properly detected on the RX 580. 
-
-Some weird bugs: htop causes the system to load and doesn't display anything. Intel Power Gadget freezes the system instantly.
 
 ## Desktop (Legacy)
 ### Configuration
