@@ -220,8 +220,6 @@
 			<dict>
 				<key>shikivga</key>
 				<integer>128</integer>
-				<key>CFG,CFG_USE_AGDC</key>
-				<data>AA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
